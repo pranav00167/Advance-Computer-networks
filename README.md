@@ -72,7 +72,11 @@ To configure manual routing between networks.
 
 Description
 Connected multiple networks using routers.
-Configured routes using: ip route <network> <mask> <next-hop>
+Configured routes using:
+
+ip route <network> <mask> <next-hop>
+
+
 Outcome
 Achieved communication between networks manually.
 Understood routing table behavior.
@@ -85,8 +89,11 @@ To implement dynamic routing using RIP.
 
 Description
 Configured RIP v2:
+
 router rip
+
 version 2
+
 network <network-id>
 
 Outcome
@@ -101,7 +108,9 @@ To configure link-state routing protocol.
 
 Description
 Configured OSPF with Area 0:
+
 router ospf 1
+
 network <network> <wildcard-mask> area 0
 
 Outcome
@@ -115,9 +124,13 @@ To configure inter-domain routing using BGP.
 
 Description
 Configured eBGP between different Autonomous Systems:
+
 router bgp <AS-number>
+
 neighbor <IP> remote-as <AS>
+
 Advertised networks using:
+
 network <network> mask <subnet-mask>
 
 Outcome
